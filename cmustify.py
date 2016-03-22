@@ -20,11 +20,15 @@ def status_data(item):
    # Split the data into an easily-parsed list.
    cmus_data = cmus_data.split()
 
+   if not "date" in cmus_data:
+       cmus_data.append("date")
+
    # Our temporary collector list.
    collector = []
 
    # Dictionary that will contain our parsed-out data.
    cmus_info = {'status':"",
+                'url': "",
                 'file':"",
                 'artist':"",
                 'album':"",
