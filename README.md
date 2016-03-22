@@ -19,18 +19,22 @@ Requirements
 Install
 -------
 1. Clone the repository into the `.cmus` folder in your home directory.
+
   ```
   git clone https://github.com/kimond/cmustify.git ~/.cmus/
   ```
 2. Make `cmustity.py` and `status_display_program.sh` executable.
+
   ```
   chmod +x cmustity.py status_display_program.sh
   ```
 3. Set the `status_display_program` variable in `cmus`.
+
   ```
   :set status_display_program=/home/user/.cmus/cmustify/status_display_program.sh
   ```
 4. Save configs in `cmus`. This is important to avoid having set the variable every times you start `cmus`.
+
   ```
   :save
   ```
