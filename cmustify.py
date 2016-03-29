@@ -93,7 +93,10 @@ def display_song():
        if track_change_duration > 5:
            # Execute notify2 to create the notification
            notify2.init("cmus-display")
-           text_body = notify_summary + " by " + notify_body
+           text_body = notify_summary
+           # Check if we have a notify_body to avoid putting a "by" at the end
+           if notify_body:
+               text_body = text_body + " by " + notify_body
            notification = notify2.Notification("Cmustify - current song", text_body, "")
            notification.set_urgency(notify2.URGENCY_LOW)
            notification.show()
