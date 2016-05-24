@@ -1,2 +1,3 @@
 #!/bin/sh
-~/.cmus/cmustify/cmustify.py "$*" &
+cmustify=`realpath cmustify.py`
+python $cmustify "$*" &

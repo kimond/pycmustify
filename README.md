@@ -19,6 +19,7 @@ Requirements
 Install
 -------
 1. Clone the repository into the `.cmus` folder in your home directory.
+   You can use `.config/cmus` folder as well.
 
   ```
   git clone https://github.com/kimond/cmustify.git ~/.cmus/
